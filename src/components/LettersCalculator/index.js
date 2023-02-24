@@ -22,15 +22,16 @@ class LettersCalculator extends Component {
         <div className="forInner">
           <h1 className="forHeader">Calculate the Letters you enter</h1>
           <div className="forFor">
-            <label className="forPara">
+            <label className="forPara" htmlFor="labelText">
               Enter the phrase
-              <input
-                type="text"
-                placeholder="Enter the phrase"
-                className="forInput"
-                onChange={this.onChaning}
-              />
             </label>
+            <input
+              id="labelText"
+              type="text"
+              placeholder="Enter the phrase"
+              className="forInput"
+              onChange={this.onChaning}
+            />
           </div>
           <p className="forPara2">No.of letters: {values}</p>
         </div>
