@@ -1,0 +1,86 @@
+.forOuter {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.forImage {
+  width: 90vw;
+}
+.forInner {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  align-items: center;
+  padding: 10px;
+}
+.forHeader {
+  color: #ffffff;
+  font-size: 26px;
+  text-align: center;
+}
+.forPara {
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+.forInput {
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 5px;
+  padding: 9px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: bold;
+
+  background-color: transparent;
+  outline: none;
+}
+.forPara2 {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  color: #219a6f;
+  margin-top: 20px;
+  width: 65vw;
+  text-align: center;
+  border-width: 0px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.forFor {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+}
+@media screen and (min-width: 992px) {
+  .forOuter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .forInner {
+    order: 0;
+    width: 30vw;
+  }
+  .forImage {
+    order: 1;
+    width: 45vw;
+  }
+  .forPara2 {
+    width: 30vw;
+    font-size: 26px;
+  }
+  .forFor {
+    width: 30vw;
+  }
+  .forHeader {
+    font-size: 36px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+}
